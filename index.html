@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href='screen.css' rel="stylesheet" type='text/css'>
+
+  </link>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const canvas = document.querySelector('canvas');
+      const ctx = canvas.getContext('2d')
+
+      ctx.fillStyle = 'yellow';
+      ctx.fillRect(0,450,600,50)
+
+      ctx.fillStyle = 'blue';
+      ctx.fillRect(0,425,70,25)
+
+      ctx.fillStyle = 'blue';
+      ctx.fillRect(275, 425, 70, 25)
+
+      ctx.fillStyle = 'blue';
+      ctx.fillRect(530, 425, 70, 25)
+
+      class Missile {
+        constructor(ctx, xPos, angle) {
+        this.color = 'red';
+        this.xPos = xPos
+        this.originalAngle = angle;
+        this.yPos = 0
+        this.angle = this.originalAngle * Math.PI / 180
+        this.speed = .5;
+        this.vx = Math.cos(this.angle) * this.speed;
+        this.vy = Math.sin(this.angle) * this.speed;
+        this.draw = this.draw.bind(this);
+        this.fall = this.fall.bind(this);
+        this.move = this.move.bind(this);
+        this.ctx = ctx;
+        }
+
+        draw() {
+          // ctx.clearRect(this.xPos, this.yPos, 4, 10)
+          this.ctx.fillStyle = this.color;
+          this.ctx.fillRect(this.xPos,this.yPos, 4, 10);
+        }
+
+        fall() {
+          this.yPos += this.vy;
+          this.xPos += this.vx;
+        }
+
+        move() {
+          this.draw();
+          this.fall();
+        }
+
+      }
+
+      var missile = new Missile(ctx,canvas.width/2, 110);
+      var missile2 = new Missile(ctx, canvas.width/3, 88);
+      var missile3 = new Missile(ctx, canvas.width/2, 80);
+      var missile4 = new Missile(ctx, canvas.width/2, 58);
+      var missile5 = new Missile(ctx, canvas.width/4.2, 60);
+      debugger
+
+      // missile.draw(ctx);
+
+
+      (function renderFrame() {
+        requestAnimationFrame(renderFrame);
+        // ctx.clearRect()
+        missile.move();
+        missile2.move();
+        missile3.move();
+        missile4.move();
+        missile5.move();
+      }());
+
+
+
+    })
+    </script>
+  </head>
+  <body>
+    <h1>Missile Guide</h1>
+
+    <canvas class='canvas' width="600" height="500"></canvas>
+
+  </body>
+</html>
