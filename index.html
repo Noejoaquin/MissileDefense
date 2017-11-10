@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title></title>
     <link href='screen.css' rel="stylesheet" type='text/css'>
-
+    
   </link>
-    <script>
+     <!-- <script>
     document.addEventListener('DOMContentLoaded', () => {
       const canvas = document.querySelector('canvas');
       const ctx = canvas.getContext('2d')
@@ -23,21 +23,21 @@
       ctx.fillStyle = 'blue';
       ctx.fillRect(530, 425, 70, 25)
 
-    //   const base = (ctx) => {
-    //   return (
-    //     ctx.fillStyle = 'yellow'
-    //     ctx.fillRect(0,450,600,50)
-    // 
-    //     ctx.fillStyle = 'blue'
-    //     ctx.fillRect(0,425,70,25)
-    // 
-    //     ctx.fillStyle = 'blue'
-    //     ctx.fillRect(275, 425, 70, 25)
-    // 
-    //     ctx.fillStyle = 'blue'
-    //     ctx.fillRect(530, 425, 70, 25) 
-    //   ) 
-    // }
+      const base = (ctx) => {
+    
+        ctx.fillStyle = 'yellow'
+        ctx.fillRect(0,450,600,50)
+    
+        ctx.fillStyle = 'blue'
+        ctx.fillRect(0,425,70,25)
+    
+        ctx.fillStyle = 'blue'
+        ctx.fillRect(275, 425, 70, 25)
+    
+        ctx.fillStyle = 'blue'
+        ctx.fillRect(530, 425, 70, 25) 
+      
+    }
       class Missile {
         constructor(ctx, xPos, angle) {
         this.color = 'red';
@@ -91,30 +91,19 @@
         requestAnimationFrame(renderFrame);
         ctx.clearRect(0,0, 600, 500)
         
-        ctx.fillStyle = 'yellow';
-        ctx.fillRect(0,450,600,50)
-        
-        ctx.fillStyle = 'blue';
-        ctx.fillRect(0,425,70,25)
-        
-        ctx.fillStyle = 'blue';
-        ctx.fillRect(275, 425, 70, 25)
-        
-        ctx.fillStyle = 'blue';
-        ctx.fillRect(530, 425, 70, 25)
-        
+        base(ctx);
         missiles.forEach((missile) => missile.move())
       }());
 
 
 
     })
-    </script>
-  </head>
-  <body>
+    </script> -->
     <h1>Missile Guide</h1>
+  </head>
+<body>
 
     <canvas class='canvas' width="600" height="500"></canvas>
-
+    <script type="application/javascript" src="lib/bundle.js"></script>
   </body>
 </html>
