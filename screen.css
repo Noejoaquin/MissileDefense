@@ -1,4 +1,17 @@
+body {
+  /*background-color: aquamarine; */
+}
 .canvas {
   border: 1px solid black;
   /*background-color: black;*/
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.page-container {
+  display: flex;
+  justify-content: center;
+  
 }
