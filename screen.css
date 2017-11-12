@@ -1,20 +1,30 @@
 body {
-  /*background-color: aquamarine; */
+  height: 100%;
+  width: 100%;
 }
 .canvas {
-  border: 1px solid black;
+  border: 1px solid blue;
+  background-image: url('./images/cartoon_sky.png');
   /*background-color: black;*/
 }
-h1 {
+h1, h3 {
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 15px;
 }
 .page-container {
+  /*background-color: beige;*/
+  height: 600px;
+  width: 100%;
   display: flex;
   justify-content: center;
-  /*padding-top: 100px;*/
+  padding-top: 100px;
 
+}
+
+.canvas {
+  height: 500px;
+  width: 600px;
 }
 
 .start-screen {
@@ -22,8 +32,19 @@ h1 {
   height: 100%;
   position: absolute;
   z-index: 3;
-  background-color: black;
-  color: red;
+  background-color: #1467CB;
+  color: #fff;
+}
+
+.credentials {
+  display: flex;
+  justify-content: center;
+}
+
+.fa {
+  font-size: 20px;
+  color: #fff;
+  padding: 5px;
 }
 
 .start-screen p {
@@ -39,14 +60,20 @@ h1 {
   height: 100%;
   position: absolute;
   z-index: 3;
-  background-color: black;
-  color: red;
+  background-color: #1467CB;
+  color: #fff;
 }
 
-.end-screen {
+.end-screen p {
   font-size: 24px;
   margin: 10px;
   line-height: 30px;
   padding-top: 30px;
   text-align: center;
+}
+
+.gradient {
+  height:100%;
+  width: 100%;
+  background: linear-gradient(blue, white, purple);
 }

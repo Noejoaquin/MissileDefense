@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='screen.css' rel="stylesheet" type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="keymaster.js"></script>
@@ -10,13 +11,19 @@
 
   </head>
 <body>
+  <div class='gradient'>
+
   <div class="start-screen">
+
     <h1>Missile Defense</h1>
+    <h3>By Noe Jimenez</h3>
+    <div class="credentials">
+      <a href="https://github.com/Noejoaquin"> <i class="fa fa-github" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/noe-jimenez/">  <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    </div>
       <p>Welcome to Missile Defense! You are the lone gunner, defending your settlements from an arial attack. You must stop the falling missiles from reaching your post, as well as the innocents on either side of you.
       </br> </br>
-      You have 20 shells per level.
-      </br> </br>
-      Fire by clicking your mouse where you want your shell to go. It will go to that location, and detonate. Use your timing.
+      To fire, click your mouse where you want your bullet to go. It will go to that location, and detonate. Use your timing.
       </br> </br>
       The missiles will fall as soon as you press the spacebar. Good luck!</p>
   </div>
@@ -24,12 +31,13 @@
     <h1>Game Over!</h1>
       <p>Thanks for playing Missile Defense.
          </br> </br>
-        If you would like to play again; press space bar
+         Press the spacebar to play again.
       </p>
   </div>
   <div class="page-container">
     <canvas class='canvas' width="600" height="500"></canvas>
   </div>
     <script type="application/javascript" src="lib/bundle.js"></script>
+  </div>
   </body>
 </html>
