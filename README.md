@@ -1,10 +1,10 @@
 ## MissileDefense
 
-![MissileDefense](https://noejoaquin.github.io/MissileDefense/)
+[MissileDefense](https://noejoaquin.github.io/MissileDefense/)
 
 ### Instructions
 
-The player is a lone gunner, protecting the surrounding cities from falling missiles. Missiles are destroyed when they are hit by a bullet, or by the bullet's blast radius. There are six cities that must be protected, and the gunner can only be hit three times. The game is over if any of these numbers are met. ![Have fun!](https://noejoaquin.github.io/MissileDefense/)
+The player is a lone gunner, protecting the surrounding cities from falling missiles. Missiles are destroyed when they are hit by a bullet, or by the bullet's blast radius. There are six cities that must be protected, and the gunner can only be hit three times. The game is over if any of these numbers are met. [Have fun!](https://noejoaquin.github.io/MissileDefense/)
 
 
 ### Technologies and Languages
