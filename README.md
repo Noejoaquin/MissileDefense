@@ -14,11 +14,7 @@ The primary languages used in the creation of MissileDefense are JavaScript, HTM
 
 ### Technical Implementation
 
-The biggest difficulty in creating MissileDefense was the implementation of collision detection. I decided to use circles so that I only had to check the distance between the colliding objects centers, and compare that length to the combined length of their radii. The second part of implementing collision concerned the detonation of the bullet upon reaching its destination. It required redrawing that  bullet with a new radius,
-![bullet_draw.png]('./assets/images/bullet_draw.png')
-![remove_bullet.png]('./assets/images/remove_bullet.png')
-
- as well as taking it out of the bullets array in my game class and placing it in my exploded objects array. This was crucial for clearing the exploded objects from the canvas, which occurs every two seconds.
+The biggest difficulty in creating MissileDefense was the implementation of collision detection. I decided to use circles so that I only had to check the distance between the colliding objects centers, and compare that length to the combined length of their radii. The second part of implementing collision concerned the detonation of the bullet upon reaching its destination. It required redrawing that  bullet with a new radius, as well as taking it out of the bullets array in my game class and placing it in my exploded objects array. This was crucial for clearing the exploded objects from the canvas, which occurs every two seconds.
 
 ### TODOS and Future Features
 
