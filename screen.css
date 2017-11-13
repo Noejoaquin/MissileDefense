@@ -68,6 +68,10 @@ h1, h3 {
   color: #fff;
 }
 
+.end-screen .credentials{
+  padding-top: 35px;
+}
+
 .end-screen h1 {
   font-size: 80px;
 }
