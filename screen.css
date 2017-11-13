@@ -4,7 +4,7 @@ body {
 }
 .canvas {
   border: 1px solid blue;
-  background-image: url('./images/cartoon_sky.png');
+  background-image: url('./assets/images/cartoon_sky.png');
   /*background-color: black;*/
 }
 h1, h3 {

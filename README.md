@@ -4,34 +4,24 @@
 
 ### Instructions
 
-The player is a lone gunner, protecting the surrounding cities from falling missiles. Missiles can be destroyed 
+The player is a lone gunner, protecting the surrounding cities from falling missiles. Missiles are destroyed when they are hit by a bullet, or by the bullet's blast radius. There are six cities that must be protected, and the gunner can only be hit three times. The game is over if any of these numbers are met. ![Have fun!](https://noejoaquin.github.io/MissileDefense/)
 
 
-### Functionality & MVP
+### Technologies and Languages
 
-In MissleGuide, users will be able to:
+The primary languages used in the creation of MissileDefense are JavaScript, HTML5, and CSS3. The primary technology used for the rendering of animations and graphics is HTML5Canvas. jQuery is implemented to grab the canvas element at the game's start, as well as update game stats, while keymaster.js is a micro-library used for defining keyboard shortcuts.
 
-- [ ] Begin the missile's journey
-- [ ] Determine the trajectory of the missile based upon movement of the mouse, which will be automatically centered on the canvas element
-- [ ] Create varied wheels with varied openings rotating and differen speeds
-- [ ] the speed of the missile will increase after the completion of several spinning wheels
 
-in addition, this project will include:
+### Technical Implementation
 
-- [ ] A description concerning the rules of the game
-- [ ] A production README
+The biggest difficulty in creating MissileDefense was the implementation of collision detection. I decided to use circles so that I only had to check the distance between the colliding objects centers, and compare that length to the combined length of their radii. The second part of implementing collision concerned the detonation of the bullet upon reaching its destination. It required redrawing that  bullet with a new radius,
+![bullet_draw.png]('./assets/images/bullet_draw.png')
+![remove_bullet.png]('./assets/images/remove_bullet.png')
 
-### Wireframes
+ as well as taking it out of the bullets array in my game class and placing it in my exploded objects array. This was crucial for clearing the exploded objects from the canvas, which occurs every two seconds.
 
-![Main Game Frame](/images/Main_Game_Frame.png)
-![Start Modal](/images/Start_Modal.png)
+### TODOS and Future Features
 
-### Technologies
+I must refactor my game class. It is too large, and the check collision method can be broken up, and its responsibility shared by the gunner, bullet, city, and missile objects. It is also imperative to refactor the implementation of `requestAnimationFrame` and the play function so that new levels can be created with ease. My missile, gunner, and bullet classes are all sharing functions that should extracted and held in a parent `CollidingObjects` class.
 
-The technologies central to my project will be JavaScript, Canvas, and CSS. I have not, as of yet, found any possibly helpful libraries, but will keep my eyes open.
-
-### Timeline
-
-Day 1: Generate the tunnel on canvas, get it rotating, opening screen
-Day 2: Missile movement, and obstacle movement
-Day 3: Lives, positioning, music, levels  
+Some future features I would like to implement include sprites, more robust levels, and sound effects.
