@@ -1,8 +1,10 @@
-## JS Project Proposal: MissleGuide
+## MissileDefense
 
-### Background
+![MissileDefense](https://noejoaquin.github.io/MissileDefense/)
 
-The user, from the point of view of the tip of a speeding missile must navigate through spinning discs, threading the needle to avoid instant destruction.
+### Instructions
+
+The player is a lone gunner, protecting the surrounding cities from falling missiles. Missiles can be destroyed 
 
 
 ### Functionality & MVP
