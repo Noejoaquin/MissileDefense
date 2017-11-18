@@ -5,21 +5,31 @@ body {
 .canvas {
   border: 1px solid blue;
   background-image: url('./assets/images/cartoon_sky.png');
-  /*background-color: black;*/
 }
+
+h1 {
+  font-size: 90px;
+  color: #84030C; 
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-top: 5px;
+}
+
 h1, h3 {
   display: flex;
   justify-content: center;
-  padding-top: 15px;
+  /*padding-top: 15px;*/
 }
+
 .page-container {
-  /*background-color: beige;*/
-  height: 600px;
   width: 100%;
   display: flex;
   justify-content: center;
   padding-top: 50px;
-
 }
 
 .canvas {
@@ -29,43 +39,95 @@ h1, h3 {
 }
 
 .start-screen {
+  font-family: 'Russo One', sans-serif;
   width: 100%;
   height: 100%;
   position: absolute;
+  top: 0px;
+  left: 0px;
   z-index: 3;
-  background-color: #1467CB;
-  color: #fff;
+  background-color: black;
+  color: #EAEAED;
 }
 
 .credentials {
   display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+.mission {
+  display: flex;
   justify-content: center;
+  font-size: 30px;
+  margin-top: 55px;
+  color: #84030C;
 }
 
 .fa {
-  font-size: 20px;
-  color: #fff;
+  font-size: 25px;
+  color: #EAEAED;
   padding: 5px;
 }
 
 .start-screen p {
   font-size: 24px;
   margin: 10px;
-  line-height: 30px;
-  padding-top: 30px;
   text-align: center;
   letter-spacing: 0.5;
   line-height: 40px;
 }
 
+.story-guide {
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.instructions-play-start-container {
+  display: flex;
+  justify-content: center;
+}
+
+.instructions-header {
+  font-size: 40px;
+}
+
+.instructions {
+  width: 70%;
+  font-size: 25px;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+.instructions li {
+  list-style: none;
+}
+
+.game-over-instruction {
+  color: #84030C;
+}
+
+.start {
+  text-align: center;
+  color: #024404;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
 .end-screen {
   transition: opacity 2s;
+  font-family: 'Russo One', sans-serif;
   opacity: 1;
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: 3;
-  background-color: #1467CB;
+  background-color: black;
   color: #fff;
 }
 
@@ -74,7 +136,7 @@ h1, h3 {
 }
 
 .end-screen h1 {
-  font-size: 80px;
+  font-size: 100px;
 }
 
 .end-screen p {
@@ -88,8 +150,12 @@ h1, h3 {
 .gradient {
   height:100%;
   width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: black;
   background: linear-gradient(blue, white, purple);
-}
+*}
 
 .stats {
   padding-top: 30px;

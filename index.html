@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='screen.css' rel="stylesheet" type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -14,29 +15,63 @@
   <div class='gradient'>
 
   <div class="start-screen">
-
-    <h1>MissileDefense</h1>
-    <h3>By Noe Jimenez</h3>
     <div class="credentials">
       <a href="https://github.com/Noejoaquin"> <i class="fa fa-github" aria-hidden="true"></i></a>
       <a href="https://www.linkedin.com/in/noe-jimenez/">  <i class="fa fa-linkedin" aria-hidden="true"></i></a>
     </div>
-      <p>Welcome to MissileDefense! You are the lone gunner, defending your settlements from an arial attack. You must stop the falling missiles from reaching your post, as well as the innocents on either side of you. If you are hit three times, or all of your settlements are destroyed, the game is over.
+
+    <h1>MissileDefense</h1>
+    <h3>By Noe Jimenez</h3>
+    <div class="mission">
+      Your Mission:
+    </div>
+    <div class="story-guide">
+      <p>You are the lone gunner. You must destroy the falling missiles before they reach you or the settlements.</p>
+    </div>
       </br> </br>
-      To fire, click your mouse where you want your bullet to go. It will go to that location and detonate. Use your timing .
-      </br> </br>
-      The missiles will fall as soon as you press the spacebar. Good luck!</p>
+      <div class="instructions-play-start-container">
+        <div class="instructions">
+          <div class="instructions-header">
+            Instructions: 
+          </div>
+          <div class="instructions-list">
+            <ul>
+              <li>To Fire:
+                Click your mouse where you want your bullet to go
+              </li>
+            </br>
+              <li>Detonation:
+                Bullet will detonate when it arrives where you clicked
+              </li>
+            </br>
+              <li>Destruction:
+                Missiles hit by bullet, or within blast radius of exploded bullet, will be destroyed
+              </li>
+            </br>
+            <div class="game-over-instruction">
+              <li>Game Over: You are hit three times, or all settlements are destroyed
+              </li>
+            </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="start">
+        Press spacebar to begin. Good luck!
+      </div>
   </div>
+  
+  
   <div class="end-screen fade-in">
+    <div class="credentials">
+      <a href="https://github.com/Noejoaquin"> <i class="fa fa-github" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/noe-jimenez/">  <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    </div>
     <h1>Game Over!</h1>
       <p>Thanks for playing MissileDefense by Noe Jimenez.
          </br> </br>
          Press the spacebar to return to the start page.
       </p>
-      <div class="credentials">
-        <a href="https://github.com/Noejoaquin"> <i class="fa fa-github" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/in/noe-jimenez/">  <i class="fa fa-linkedin" aria-hidden="true"></i></a>
-      </div>
   </div>
   <div class="stats">
     <div id='gunner-lives'></div>
