@@ -4,7 +4,7 @@ body {
 }
 .canvas {
   border: 1px solid blue;
-  background-image: url('./assets/images/cartoon_sky.png');
+  background-image: url('./assets/images/background_image_missile_defense2.jpg');
 }
 
 h1 {
@@ -17,12 +17,23 @@ h1 {
 h3 {
   font-size: 30px;
   margin-top: 5px;
+  color: #EAEAED;
+  text-decoration: none;
+}
+
+h3:hover {
+  cursor: pointer;
+  text-decoration: none;
 }
 
 h1, h3 {
   display: flex;
   justify-content: center;
   /*padding-top: 15px;*/
+}
+
+.profile-link-header {
+  text-decoration: none;
 }
 
 .page-container {
@@ -33,9 +44,11 @@ h1, h3 {
 }
 
 .canvas {
+  margin-top: 50px;
   height: 500px;
   width: 600px;
   cursor: crosshair;
+  transform: scale(1.3,1.3);
 }
 
 .start-screen {
@@ -46,7 +59,7 @@ h1, h3 {
   top: 0px;
   left: 0px;
   z-index: 3;
-  background-color: black;
+  background-color: #666363;
   color: #EAEAED;
 }
 
@@ -116,7 +129,7 @@ h1, h3 {
   text-align: center;
   color: #024404;
   font-size: 40px;
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
 }
 
 .end-screen {
@@ -127,8 +140,8 @@ h1, h3 {
   height: 100%;
   position: absolute;
   z-index: 3;
-  background-color: black;
-  color: #fff;
+  background-color: #666363;
+  color: #EAEAED;
 }
 
 .end-screen .credentials{
@@ -147,6 +160,11 @@ h1, h3 {
   text-align: center;
 }
 
+.portfolio-link-end {
+  color: #EAEAED;
+  text-decoration: none;
+}
+
 .gradient {
   height:100%;
   width: 100%;
@@ -154,7 +172,7 @@ h1, h3 {
   top: 0px;
   left: 0px;
   background-color: black;
-  background: linear-gradient(blue, white, purple);
+  background: linear-gradient(#7A7777, #615E5E);
 *}
 
 .stats {
@@ -171,4 +189,22 @@ h1, h3 {
   font-family: sans-serif;
   font-size: 20px;
   text-align: center;
+}
+
+.game-credentials {
+  margin-top: 100px;
+}
+
+.portfolio-link {
+  color: #EAEAED;
+  text-decoration: none;
+  margin-top: 7px;
+  margin-right: 3px;
+  font-size: 20px; 
+  font-family: 'Russo One', sans-serif;
+}
+
+.potfolio-link:hover {
+  cursor: pointer;
+  text-decoration: none;
 }
