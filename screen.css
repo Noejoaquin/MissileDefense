@@ -1,15 +1,15 @@
 body {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
 }
 .canvas {
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
   background-image: url('./assets/images/background_image_missile_defense2.jpg');
 }
 
 h1 {
   font-size: 90px;
-  color: #84030C; 
+  color: #84030C;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -54,7 +54,7 @@ h1, h3 {
 .start-screen {
   font-family: 'Russo One', sans-serif;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -137,7 +137,7 @@ h1, h3 {
   font-family: 'Russo One', sans-serif;
   opacity: 1;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   position: absolute;
   z-index: 3;
   background-color: #666363;
@@ -166,14 +166,14 @@ h1, h3 {
 }
 
 .gradient {
-  height:100%;
+  min-height:100%;
   width: 100%;
   position: absolute;
   top: 0px;
   left: 0px;
   background-color: black;
   background: linear-gradient(#7A7777, #615E5E);
-*}
+}
 
 .stats {
   padding-top: 30px;
@@ -200,7 +200,7 @@ h1, h3 {
   text-decoration: none;
   margin-top: 7px;
   margin-right: 3px;
-  font-size: 20px; 
+  font-size: 20px;
   font-family: 'Russo One', sans-serif;
 }
 
