@@ -17,7 +17,7 @@ h3 {
   font-size: 30px;
   margin-top: 5px;
   color: #EAEAED;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 h3:hover {
@@ -165,7 +165,8 @@ h1, h3 {
 
 .portfolio-link-end {
   color: #EAEAED;
-  text-decoration: none;
+  text-decoration: underline;
+
 }
 
 .gradient {
@@ -239,6 +240,7 @@ h1, h3 {
   margin-right: 3px;
   font-size: 20px;
   font-family: 'Russo One', sans-serif;
+  text-decoration: underline;
 }
 
 .potfolio-link:hover {
