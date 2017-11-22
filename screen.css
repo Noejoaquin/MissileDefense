@@ -186,7 +186,6 @@ h1, h3 {
 }
 
 .game-play {
-  /*padding-top: 50px;*/
   display: flex;
   justify-content: space-around;
   flex-direction: row-reverse;
@@ -229,7 +228,8 @@ h1, h3 {
 }
 
 .game-credentials {
-  margin-top: 100px;
+  margin-top: 90px;
+  margin-right: 176px;
 }
 
 .portfolio-link {
