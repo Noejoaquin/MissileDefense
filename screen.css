@@ -1,7 +1,24 @@
+body, h1, h3, button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+}
+
 body {
   min-height: 100%;
   width: 100%;
 }
+
+
 .canvas {
   background-image: url('./assets/images/background_image_missile_defense2.jpg');
 }
@@ -66,6 +83,20 @@ h1, h3 {
   color: #EAEAED;
 }
 
+.sound:hover {
+  cursor: pointer;
+}
+
+.fa {
+  font-size: 25px;
+  color: #EAEAED;
+  padding: 5px;
+}
+.sound {
+  text-decoration: line-through;
+  color: #84030C;
+}
+
 .credentials {
   display: flex;
   justify-content: flex-end;
@@ -81,11 +112,6 @@ h1, h3 {
   color: #84030C;
 }
 
-.fa {
-  font-size: 25px;
-  color: #EAEAED;
-  padding: 5px;
-}
 
 .start-screen p {
   font-size: 24px;
