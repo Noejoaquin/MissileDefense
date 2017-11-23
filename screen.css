@@ -22,7 +22,7 @@ h3 {
 
 h3:hover {
   cursor: pointer;
-  text-decoration: none;
+  /*text-decoration: none;*/
 }
 
 h1, h3 {
