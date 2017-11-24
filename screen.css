@@ -207,6 +207,10 @@ h1, h3 {
   font-size: 45px;
 }
 
+.points-list li:first-child {
+  margin-right: 20px;
+}
+
 .points-list {
   display: flex;
 }
