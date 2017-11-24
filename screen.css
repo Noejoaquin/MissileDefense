@@ -202,7 +202,7 @@ h1, h3 {
   justify-content: center;
 }
 
-.points-display > li {
+.points-display li {
   list-style: none;
   font-size: 45px;
 }
