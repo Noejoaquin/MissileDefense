@@ -1,5 +1,4 @@
 body, h1, h3, button {
-  border: none;
   margin: 0;
   padding: 0;
   width: auto;
@@ -8,6 +7,8 @@ body, h1, h3, button {
   color: inherit;
   font: inherit;
   outline: none;
+  border: none;
+  text-decoration: none;
   line-height: normal;
   -webkit-font-smoothing: inherit;
   -moz-osx-font-smoothing: inherit;
@@ -40,7 +41,6 @@ h3 {
 
 h3:hover {
   cursor: pointer;
-  /*text-decoration: none;*/
 }
 
 h1, h3 {
@@ -92,6 +92,10 @@ h1, h3 {
   font-size: 25px;
   color: #EAEAED;
   padding: 5px;
+}
+
+.fa-microphone {
+  font-size: 30px;
 }
 .sound {
   text-decoration: line-through;
@@ -193,6 +197,20 @@ h1, h3 {
   font-size: 100px;
 }
 
+.points-display {
+  display: flex;
+  justify-content: center;
+}
+
+.points-display > li {
+  list-style: none;
+  font-size: 45px;
+}
+
+.points-list {
+  display: flex;
+}
+
 .end-screen p {
   font-size: 30px;
   margin: 10px;
@@ -204,7 +222,6 @@ h1, h3 {
 .portfolio-link-end {
   color: #EAEAED;
   text-decoration: underline;
-
 }
 
 .gradient {
