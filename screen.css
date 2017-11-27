@@ -84,7 +84,7 @@ h1, h3 {
   top: 0px;
   left: 0px;
   z-index: 3;
-  background-color: #666363;
+  background-color: #747D8C;
   color: #EAEAED;
 }
 
@@ -178,7 +178,6 @@ h1, h3 {
   text-align: center;
   color: #024404;
   font-size: 40px;
-  /*margin-bottom: 30px;*/
 }
 
 .end-screen {
@@ -189,7 +188,7 @@ h1, h3 {
   min-height: 100%;
   position: absolute;
   z-index: 3;
-  background-color: #666363;
+  background-color: #747D8C;
   color: #EAEAED;
 }
 
@@ -239,7 +238,8 @@ h1, h3 {
   top: 0px;
   left: 0px;
   background-color: black;
-  background: linear-gradient(#7A7777, #615E5E);
+  /*background: linear-gradient(45deg, #7A7777, #615E5E);*/
+  background: linear-gradient(45deg, #8296B3, #BABFC7);
 }
 
 .stats {
@@ -263,10 +263,10 @@ h1, h3 {
 
 .stats li {
   list-style: none;
-  background-color: #9CA0A9;
+  background-color: #C0C6CF;
   height: 80px;
   width: 225px;
-  color: #2B2D30;
+  color: #84030C;
   font-family: 'Russo One', sans-serif;
   font-size: 20px;
   text-align: center;
@@ -309,4 +309,8 @@ h1, h3 {
 .potfolio-link:hover {
   cursor: pointer;
   text-decoration: none;
+}
+
+#game-link {
+  color: #84030C;
 }
