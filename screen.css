@@ -18,7 +18,7 @@ body, h1, h3, button {
 body {
   min-height: 100%;
   width: 100%;
-  overflow: hidden;
+  overflow-y: scroll;
 }
 
 
@@ -239,7 +239,6 @@ h1, h3 {
   top: 0px;
   left: 0px;
   background-color: black;
-  /*background: linear-gradient(45deg, #7A7777, #615E5E);*/
   background: linear-gradient(45deg, #8296B3, #BABFC7);
 }
 
